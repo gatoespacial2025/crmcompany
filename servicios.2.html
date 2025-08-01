@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRMM</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+  <section class="service-header">
+    <nav>
+      <a href="index.html"><img src="Imágenes/logoconblanco2.0.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.2.html">Servicios</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="galería.html">Galería</a></li>
+          <li><a href="contácto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Nuestros servicios</h1>
+
+  </section> 
+<!----Servicios(página de SERVICIOS)------------>
+<section class="course">
+  <h1>Servicios que ofrecemos</h1> 
+  <p>Los materiales que se utilizen para la obra como tal serán de acuerdo 
+    al cliente, tales como: color de la pintura, ceramica, fragua...</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>Repello</h3>
+    </div>
+    <div class="course-col">
+      <h3>Pintura</h3>
+    </div> 
+    <div class="course-col">
+      <h3>Construcción</h3>
+    </div> 
+     <div class="course-col">
+      <h3>Enchapes</h3>
+    </div> 
+    <div class="course-col">
+      <h3>Acabados personalizados</h3>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+ 
+<footer class="footer">
+  <div class="footer-col logo-col">
+    <img src="Imágenes/Logoinvisible.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="footer-col center-col">
+    <h2>ENCHAPES M²</h2>
+  </div>
+
+  <div class="footer-col social-col">
+    <h3>CONTÁCTANOS</h3>
+    <div class="info-contacto">
+      <div class="info-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>+506 6209-4998</span>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>leonelmunguia2011@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+ 
+  <!----JavaScript for Toggle Menu------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+
+
+
+
+
+</body>
+</html>

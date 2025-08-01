@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRMM</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+  <section class="aboutus-header">
+    <nav>
+      <a href="index.html"><img src="Imágenes/logoconblanco2.0.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.2.html">Servicios</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="galería.html">Galería</a></li>
+          <li><a href="contácto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Sobre nosotros</h1>
+
+  </section> 
+
+<!--------Sobre nosotros contenido-->
+<section class="servicios">
+  <div class="row">
+    <div class="servicio-col">
+      <h1>Tiempo y calidad</h1>
+      <p>Con más de 5 años de experiencia en el campo, hemos consolidado 
+      nuestros servicios para ser una empresa independiente, la cual busca velar por un 
+      servicio de calidad que vaya de acuerdo a los intereses de nuestros
+      clientes; contamos con experiencia en distintos proyectos: desdes 
+      hospitales, hasta condominios, restaurantes, apartamentos...
+      Entre los valores que nos representan están: <b>la disciplina, la excelencia, el compromiso y la perseverancia.</b></p>
+          <a href=""class="hero-btn red-btn">Información</a>
+    </div>
+    <div class="servicio-col">
+      <img src="Imágenes/checklis.jpg">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+ 
+<footer class="footer">
+  <div class="footer-col logo-col">
+    <img src="Imágenes/Logoinvisible.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="footer-col center-col">
+    <h2>ENCHAPES M²</h2>
+  </div>
+
+  <div class="footer-col social-col">
+    <h3>CONTÁCTANOS</h3>
+    <div class="info-contacto">
+      <div class="info-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>+506 6209-4998</span>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>leonelmunguia2011@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+ 
+  <!----JavaScript for Toggle Menu------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+
+
+
+
+
+</body>
+</html>

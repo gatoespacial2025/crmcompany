@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRMM</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+  <section class="galería-header">
+    <nav>
+      <a href="index.html"><img src="Imágenes/logoconblanco2.0.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.2.html">Servicios</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="galería.html">Galería</a></li>
+          <li><a href="contácto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Galería</h1>
+  </section> 
+
+<section class="fotos-container">
+  <h2>Imágenes de algunos de nuestros proyectos</h2>
+ <div class="carousel-container">
+  <div class="carousel-track">
+    <div class="swiper-slide"><img src="Imágenes/uno.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/dos.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/tres.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/cuatro.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/cinco.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/seis.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/siete.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/ocho.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/nueve.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/diez.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/once.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="Imágenes/doce.jpg" alt=""></div>
+    <!-- más slides -->
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script scr="script.js"></script>
+
+
+ 
+<footer class="footer">
+  <div class="footer-col logo-col">
+    <img src="Imágenes/Logoinvisible.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="footer-col center-col">
+    <h2>ENCHAPES M²</h2>
+  </div>
+
+  <div class="footer-col social-col">
+    <h3>CONTÁCTANOS</h3>
+    <div class="info-contacto">
+      <div class="info-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>+506 6209-4998</span>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>leonelmunguia2011@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+ 
+  <!----JavaScript for Toggle Menu------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.swiper-slide');
+    let index = 0;
+
+    function mover() {
+      index = (index + 1) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(mover, 3000);
+  });
+</script>
+
+
+
+
+</body>
+</html>

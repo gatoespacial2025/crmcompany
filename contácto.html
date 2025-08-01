@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRMM</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+  <section class="contacto-header">
+    <nav>
+      <a href="index.html"><img src="Imágenes/logoconblanco2.0.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.2.html">Servicios</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="galería.html">Galería</a></li>
+          <li><a href="contácto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contáctanos</h1>
+  </section> 
+
+<!---------Contactanos-------------------> 
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>
+          <h5>+506 6209-4998</h5>
+          <p>De Lunes a Sábados, 7AM a 8PM </p>
+        </span>
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+          <h5>leonelmunguia2011@gmail.com</h5>
+          <p>Envíanos un email</p>
+        </span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Ecribe tu nombre" required>
+        <input type="email" name="email" placeholder="Ecribe tu correo electrónico" required>
+        <input type="text" name="subject" placeholder="Título" required>
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+  
+</section>
+
+
+
+ 
+<footer class="footer">
+  <div class="footer-col logo-col">
+    <img src="Imágenes/Logoinvisible.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="footer-col center-col">
+    <h2>ENCHAPES M²</h2>
+  </div>
+
+  <div class="footer-col social-col">
+    <h3>CONTÁCTANOS</h3>
+    <div class="info-contacto">
+      <div class="info-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>+506 6209-4998</span>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>leonelmunguia2011@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+ 
+  <!----JavaScript for Toggle Menu------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+
+
+
+
+
+</body>
+</html>
